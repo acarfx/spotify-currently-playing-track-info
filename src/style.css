@@ -1,0 +1,127 @@
+@-webkit-keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  body {
+    background: #fafafa;
+  }
+  
+  .music-card {
+    
+    border-radius: 6px;
+    background: #36393e;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 480px;
+  }
+  .music-card > .image img {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.3;
+    height: 300px;
+    width: 300px;
+  }
+  .music-card > .image:after {
+    height: 100px;
+    content: "";
+    top: 200px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .music-card > .wave {
+    position: absolute;
+    height: 750px;
+    width: 750px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -70%;
+    margin-top: -130%;
+    border-radius: 40%;
+    background: radial-gradient(#f0a90448, #ed4245);
+    -webkit-animation: spin 3000ms infinite linear;
+            animation: spin 3000ms infinite linear;
+  }
+  .music-card > .wave:nth-child(2) {
+    top: 10px;
+    -webkit-animation: spin 4000ms infinite linear;
+            animation: spin 4000ms infinite linear;
+  }
+  .music-card > .wave:nth-child(3) {
+    top: 10px;
+    -webkit-animation: spin 5000ms infinite linear;
+            animation: spin 5000ms infinite linear;
+  }
+
+  .music-card > .wave2 {
+    position: absolute;
+    height: 750px;
+    width: 750px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -70%;
+    margin-top: -130%;
+    border-radius: 40%;
+    background: radial-gradient(#06162b85, #131d45bb);
+    -webkit-animation: spin 3000ms infinite linear;
+            animation: spin 3000ms infinite linear;
+  }
+  .music-card > .wave2:nth-child(2) {
+    top: 10px;
+    -webkit-animation: spin 4000ms infinite linear;
+            animation: spin 4000ms infinite linear;
+  }
+  .music-card > .wave2:nth-child(3) {
+    top: 10px;
+    -webkit-animation: spin 5000ms infinite linear;
+            animation: spin 5000ms infinite linear;
+  }
+
+  .music-card > .info {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .music-card > .info > .title {
+    font-size: 1.3em;
+    font-weight: 400;
+    font-family: "Playfair display";
+    color: rgb(255, 255, 255);
+    margin-bottom: 8px;
+  }
+  
+  .music-card > .info > .artist {
+    font-family: "Source sans pro";
+    color: #ffffff;
+    font-size: 0.8em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none; 
+  }
+  .music-card > .info > .artist > a{
+    font-family: "Source sans pro";
+    color: #ffffff;
+    font-size: 1.00em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none; 
+  }

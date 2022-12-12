@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Anlık Spotify Müzik Takip Sistemi</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./src/style.css">
+    <script src="./src/script.js"></script>
+</head>
+
+
+<body>
+    <audio src="./src/lopp.mp3" id="audio" name="audio" autoplay="autoplay" autoplay muted preload="auto" style="display: none;" type="audio/mpeg"></audio>
+    <div id="app">
+    
+    </div>
+</body>
+<script>
+    
+    get_calan_sarki()
+    
+    setInterval(() => {
+        get_calan_sarki()
+    }, 3000);
+
+</script>
+</html>
